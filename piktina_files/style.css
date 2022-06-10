@@ -1,0 +1,289 @@
+body,
+p,
+dl,
+dd,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+ul>li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+a {
+  display: block;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.accordion-block {
+  padding: 8px 0;
+  background-color: #f2f2f2;
+}
+
+.accordion-wrap {
+  margin-top: 20px;
+}
+
+.accordion-wrap:first-child {
+  margin: 0;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  position: relative;
+  display: block;
+  padding: 15px 38px 13px 15px;
+  margin: 0 20px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: -1px 10px 15px -15px rgba(0, 0, 0, 0.75);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #3d3d56;
+}
+
+.accordion.text20 {
+  font-size: 20px;
+}
+
+.accordion .arrow-icon {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 19px;
+  height: 19px;
+  transform: rotate(90deg);
+}
+
+.accordion.active .arrow-icon {
+  transform: rotate(-90deg);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel-content>*,
+.panel-content a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #858b92;
+}
+
+.panel-content {
+  padding: 20px 40px 10px;
+}
+
+.panel-content p {
+  margin-top: 20px;
+}
+
+.panel-content p:first-child {
+  margin-top: 0;
+}
+
+.panel-content li {
+  list-style: inherit;
+  margin-top: 5px;
+}
+
+.panel-content li:first-child {
+  margin-top: 0;
+}
+
+.panel-content .title {
+  margin-top: 0;
+  text-align: center;
+}
+
+.panel-content ul ul {
+  padding-top: 25px;
+  padding-left: 40px;
+}
+
+.panel-content--image-content p {
+  margin: 0;
+}
+
+/* START merchant list style */
+.merchant__list {
+  padding: 0 8px;
+  background-color: #fbfbfb;
+}
+.merchant__box {
+  display: flex;
+  min-height: 130px;
+  padding: 9px 12px;
+  box-sizing: border-box;
+}
+.merchant__image {
+  width: 35%;
+  min-width: 112px;
+}
+.merchant__image img {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 1px 10px 9px 0px rgba(2,15,15,.1);
+}
+.merchant__content {
+  flex: 1 1 auto;
+  padding-left: 15px;
+}
+
+.merchant__content * {
+  margin-bottom: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgb(51,51,51);
+}
+.merchant__content .merchant__title {
+  margin: 10px 0 15px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 12px;
+}
+.merchant__content .merchant__highlight {
+  font-weight: 700;
+}
+
+.merchant__content--style-2 {
+  padding: 14px 11px 11px;
+}
+
+.merchant__content--style-2 * {
+  margin-bottom: 5px;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.merchant__content--style-2 .merchant__title,
+.merchant__content--style-2 .merchant__highlight  {
+  margin: 0;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.merchant__list--style-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.merchant__list--style-2 .merchant__box {
+  width: 50%;
+  flex-direction: column;
+}
+
+.merchant__list--style-2 .merchant__image {
+  width: 100%;
+}
+
+.merchant__list--style-2 .merchant__image img {
+  border-radius: 4px 4px 0 0;
+  box-shadow: none;
+}
+
+.merchant__list--style-2 .merchant__content {
+  background-color: white;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+  flex: 1 1 auto;
+  box-shadow: 1px 10px 22px 0px rgba(156,156,156,.15);
+}
+/* END merchant list style */
+
+.coupon-block {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 375px) {
+  .accordion {
+    padding: 17px 43px 16px 20px;
+    font-size: 15px;
+  }
+
+  .accordion .arrow-icon {
+    top: 16px;
+    right: 15px;
+    width: 23px;
+    height: 23px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .accordion {
+    padding: 33px 95px 33px 50px;
+    font-size: 30px;
+  }
+
+  .accordion-block {
+    padding: 8px 50px;
+  }
+
+  .accordion .arrow-icon {
+    top: 27px;
+    right: 40px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .panel-content>*,
+  .panel-content a {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .accordion-block {
+    padding: 8px 60px;
+  }
+
+  .accordion {
+    margin-bottom: 40px;
+    padding: 43px 115px 43px 50px;
+    font-size: 48px;
+  }
+
+  .accordion .arrow-icon {
+    top: 40px;
+    right: 52px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .panel-content>*,
+  .panel-content a {
+    font-size: 44px;
+  }
+
+  .panel-content {
+    padding: 10px 73px 30px;
+  }
+}

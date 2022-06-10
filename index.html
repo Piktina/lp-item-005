@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>PIKTINA Landing Page</title>
+
+    <meta name="description" content="PIKTINA" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1"
+    />
+    <link href="./piktina_files/css" rel="stylesheet" />
+    <link rel="stylesheet" href="./piktina_files/style.css" />
+    <link rel="icon" type="image/x-icon" href="./piktina_files/favicon.ico" />
+  </head>
+
+  <body>
+    <a class="container">
+      <p><img src="./piktina_files/cover.png" alt="" /></p>
+
+    </a>
+    <p class="coupon-block">
+      <a
+        href="javascript:;"
+        style="flex-grow: 1"
+      >
+        <img src="./piktina_files/description.png" alt="" />
+      </a>
+    </p>
+    <a
+      href="javascript:;"
+      style="flex-grow: 1"
+    >
+      <p><img src="./piktina_files/breaker.png" alt="" /></p>
+    </a>
+    <section
+      class="merchant__list merchant__list--style-2"
+      data-match-height="merchant__box"
+    >
+    </section>
+
+
+    <p>
+      <a href="https://links.piktina.com/links/c89UHawe2cES9JLp8">
+        <img src="./piktina_files/footerButton.png" alt="" />
+      </a>
+    </p>
+    <!-- START accordion-block -->
+    <div class="accordion-block">
+      <!-- START accordion-item -->
+      <div class="accordion-wrap">
+        <a class="accordion" href="javascript:;">
+          <span>(*) Hướng dẫn mua hàng trên Piktina: </span>
+          <img src="./piktina_files/arrow_01.png" alt="" class="arrow-icon" />
+        </a>
+        <div class="panel">
+          <div class="panel-content">
+            <!-- accordion content here -->
+            <ul id="footerNotes">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END accordion-item -->
+    </div>
+    <!-- END accordion-block -->
+
+
+    <!-- accordion -->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          var bodyRect = document.body.getBoundingClientRect(),
+            pannelRect = this.getBoundingClientRect(),
+            offset = pannelRect.top - bodyRect.top;
+
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            setTimeout(() => {
+              window.scrollTo({
+                top: offset,
+                behavior: "smooth",
+              });
+            }, 200);
+          }
+        });
+      }
+
+
+    var ads = [
+      {
+        link: "https://piktinastaging.page.link/22aDJCnXrFpx5nEg8",
+        image: "https://cdn.piktina.org/piktina-seller/image/0b4a98b1-d2b0-11ec-9522-2e8ebac91506/original",
+        title: "Deep link staging",
+        description: "Description",
+      },
+      {
+        link: "https://piktina.com/web?url=https://piktina.github.io/landing-page/",
+        image: "https://cdn.piktina.org/piktina-seller/image/ea6342d4-d2ae-11ec-b725-a24e02d7610d/original",
+        title: "Mở web view",
+        description: "Description",
+      },
+      {
+        link: "https://links.piktina.com/links/c89UHawe2cES9JLp8",
+        image: "https://cdn.piktina.org/piktina-seller/image/d40efe0a-e718-11ec-b8b3-d6c159d29e91/original",
+        title: "Title",
+        description: "Description",
+      },
+      {
+        link: "https://links.piktina.com/links/c89UHawe2cES9JLp8",
+        image: "https://cdn.piktina.org/piktina-seller/image/d40efe0a-e718-11ec-b8b3-d6c159d29e91/original",
+        title: "Title",
+        description: "Description",
+      },
+    ]
+
+    var mechantListHtml = ''
+
+    for(let i = 0; i < ads.length; i += 1){
+      mechantListHtml += `<a
+        class="merchant__box"
+        href="${ads[i].link}"
+        title="${ads[i].title}"
+      >
+        <div class="merchant__image">
+          <img
+            src="${ads[i].image}"
+            alt="merchant image"
+          />
+        </div>
+        <div class="merchant__content merchant__content--style-2">
+          <h4 class="merchant__title">${ads[i].title}</h4>
+          <p class="merchant__highlight" style="color: #03b7d8">
+            ${ads[i].description}
+          </p>
+        </div>
+      </a>`
+    }
+
+    document.getElementsByClassName('merchant__list')[0].innerHTML = mechantListHtml
+
+
+    var footerNotes = [
+      "Bấm vào sản phẩm bạn thik",
+      "Thêm vào giỏ hàng liền tay",
+      "Chọn thanh toán",
+      "Sau đó chọn MUA HÀNG",
+      "Chờ GHTK giao hàng cho bạn trong 1-2 ngày"
+    ]
+
+    var footerNotesHtml = ''
+    for (let i = 0; i < footerNotes.length; i += 1){
+      footerNotesHtml += `<li><p>${footerNotes[i]}</p></li>`
+    }
+
+    document.getElementById('footerNotes').innerHTML = footerNotesHtml
+
+    </script>
+    <!-- end accordion -->
+
+    <!-- Match height -->
+    <!-- data-match-height to active plugin, the value is the class name of elements you want to match height -->
+    <script>
+      var attrName = "data-match-height";
+      var eqWrap = document.querySelectorAll(`[${attrName}]`);
+      [].map.call(eqWrap, (el) => {
+        if (eqWrap.length > 1) {
+          var eqEl = el.querySelectorAll(`.${el.getAttribute(attrName)}`);
+          var maxHeight = 0;
+          [].map.call(eqEl, (el) => {
+            maxHeight =
+              el.offsetHeight > maxHeight ? el.offsetHeight : maxHeight;
+          });
+          [].map.call(eqEl, (el) => {
+            el.style.minHeight = maxHeight + "px";
+          });
+        }
+      });
+    </script>
+    <!-- END Match height -->
+  </body>
+</html>
