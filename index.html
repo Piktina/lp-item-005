@@ -51,7 +51,7 @@
       <div class="accordion-wrap">
    
         <a class="accordion" href="javascript:;">
-        <!--  <span>(*) Hướng dẫn mua hàng trên Piktina: </span> -->
+        <span>(*) Hướng dẫn mua hàng trên Piktina: </span>
           <img src="./piktina_files/arrow_01.png" alt="" class="arrow-icon" />
         </a>
         
@@ -161,7 +161,7 @@
 
     var footerNotesHtml = ''
     for (let i = 0; i < footerNotes.length; i += 1){
-      footerNotesHtml += `<p>${footerNotes[i]}</p>`
+      footerNotesHtml += `<li><p>${footerNotes[i]}</p></li>`
     }
 
     document.getElementById('footerNotes').innerHTML = footerNotesHtml
