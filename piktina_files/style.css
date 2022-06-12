@@ -57,7 +57,7 @@ button {
   cursor: pointer;
   border-radius: 5px;
   box-shadow: -1px 10px 15px -15px rgba(0, 0, 0, 0.75);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #3d3d56;
@@ -89,7 +89,7 @@ button {
 
 .panel-content>*,
 .panel-content a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 14px;
   color: #858b92;
 }
@@ -282,7 +282,7 @@ button {
   .panel-content a {
     font-family: 'Mulish', sans-serif;
     font-size: 13px;
-    color: #F7FAFC;
+    color: #FFFFFF;
   }
 
   .panel-content {
