@@ -151,7 +151,7 @@
 
 
     var footerNotes = [
-      "Hướng dẫn mua hàng trên Piktina:"
+      "Hướng dẫn mua hàng trên Piktina:",
       "- Bấm vào sản phẩm bạn thik",
       "- Thêm vào giỏ hàng liền tay",
       "- Chọn thanh toán",
@@ -161,7 +161,7 @@
 
     var footerNotesHtml = ''
     for (let i = 0; i < footerNotes.length; i += 1){
-      footerNotesHtml += `<li><p>${footerNotes[i]}</p></li>`
+      footerNotesHtml += `<p>${footerNotes[i]}</p>`
     }
 
     document.getElementById('footerNotes').innerHTML = footerNotesHtml
