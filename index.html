@@ -49,10 +49,12 @@
     <div class="accordion-block">
       <!-- START accordion-item -->
       <div class="accordion-wrap">
+        <!--
         <a class="accordion" href="javascript:;">
           <span>(*) Hướng dẫn mua hàng trên Piktina: </span>
           <img src="./piktina_files/arrow_01.png" alt="" class="arrow-icon" />
         </a>
+        -->
         <div class="panel">
           <div class="panel-content">
             <!-- accordion content here -->
@@ -149,16 +151,17 @@
 
 
     var footerNotes = [
-      "Bấm vào sản phẩm bạn thik",
-      "Thêm vào giỏ hàng liền tay",
-      "Chọn thanh toán",
-      "Sau đó chọn MUA HÀNG",
-      "Chờ GHTK giao hàng cho bạn trong 1-2 ngày"
+      "Hướng dẫn mua hàng trên Piktina:"
+      "- Bấm vào sản phẩm bạn thik",
+      "- Thêm vào giỏ hàng liền tay",
+      "- Chọn thanh toán",
+      "- Sau đó chọn MUA HÀNG",
+      "- Chờ GHTK giao hàng cho bạn trong 1-2 ngày"
     ]
 
     var footerNotesHtml = ''
     for (let i = 0; i < footerNotes.length; i += 1){
-      footerNotesHtml += `<li><p>${footerNotes[i]}</p></li>`
+      footerNotesHtml += `<p>${footerNotes[i]}</p>`
     }
 
     document.getElementById('footerNotes').innerHTML = footerNotesHtml
