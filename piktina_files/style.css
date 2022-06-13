@@ -1,17 +1,8 @@
 body,
 p,
 dl,
-dd,
-ul {
+dd {
   margin: 0;
-}
-
-ul {
-  padding: 0;
-}
-
-ul>li {
-  list-style: none;
 }
 
 img {
@@ -34,99 +25,28 @@ button {
   cursor: pointer;
 }
 
-.accordion-block {
-  padding: 8px 0;
-  background-color: #8A9399;
-}
 
-.accordion-wrap {
-  margin-top: 20px;
-}
-
-.accordion-wrap:first-child {
-  margin: 0;
-}
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-  position: relative;
-  display: block;
-  padding: 15px 38px 13px 15px;
-  margin: 0 20px;
-  background-color: #fff;
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: -1px 10px 15px -15px rgba(0, 0, 0, 0.75);
-  font-family: 'Mulish', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #3d3d56;
-}
-
-.accordion.text20 {
-  font-size: 20px;
-}
-
-.accordion .arrow-icon {
-  position: absolute;
-  top: 16px;
-  right: 15px;
-  width: 19px;
-  height: 19px;
-  transform: rotate(90deg);
-}
-
-.accordion.active .arrow-icon {
-  transform: rotate(-90deg);
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.panel-content>*,
-.panel-content a {
-  font-family: 'Mulish', sans-serif;
+.footer {
+  padding: 32px 24px 64px;
+  gap: 12px;
+  font-family: 'Mulish';
+  font-style: normal;
   font-size: 14px;
-  color: #858b92;
+  line-height: 18px;
+  background-color: #8A9399;
+  color: #F0F5F7
 }
 
-.panel-content {
-  padding: 20px 40px 10px;
-}
+.footer p {
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.1px;
 
-.panel-content p {
-  margin-top: 20px;
-}
-
-.panel-content p:first-child {
-  margin-top: 0;
-}
-
-.panel-content li {
-  list-style: inherit;
-  margin-top: 5px;
-}
-
-.panel-content li:first-child {
-  margin-top: 0;
-}
-
-.panel-content .title {
-  margin-top: 0;
-  text-align: center;
-}
-
-.panel-content ul ul {
-  padding-top: 25px;
-  padding-left: 40px;
-}
-
-.panel-content--image-content p {
-  margin: 0;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #F7FAFC;
 }
 
 /* START merchant list style */
@@ -254,10 +174,6 @@ button {
     height: 45px;
   }
 
-  .panel-content>*,
-  .panel-content a {
-    font-size: 24px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -276,16 +192,5 @@ button {
     right: 52px;
     width: 60px;
     height: 60px;
-  }
-
-  .panel-content>*,
-  .panel-content a {
-    font-family: 'Mulish', sans-serif;
-    font-size: 13px;
-    color: #FFFFFF;
-  }
-
-  .panel-content {
-    padding: 10px 73px 30px;
   }
 }

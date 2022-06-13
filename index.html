@@ -12,6 +12,7 @@
     <link href="./piktina_files/css" rel="stylesheet" />
     <link rel="stylesheet" href="./piktina_files/style.css" />
     <link rel="icon" type="image/x-icon" href="./piktina_files/favicon.ico" />
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
   </head>
 
   <body>
@@ -46,55 +47,16 @@
       </a>
     </p>
    
-    <!-- START accordion-block -->
-    <div class="accordion-block">
-      <!-- START accordion-item -->
-      <div class="accordion-wrap">
-        <a class="accordion" href="javascript:;">
-          <span>(*) Hướng dẫn mua hàng trên Piktina: </span>
-          <img src="./piktina_files/arrow_01.png" alt="" class="arrow-icon" />
-        </a>
-        <div class="panel">
-          <div class="panel-content">
-            <!-- accordion content here -->
-            <ul id="footerNotes">
 
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- END accordion-item -->
+    <div class="footer">
+      <p>Hướng dẫn mua hàng trên piktina</p>
+
+        <ul id="footerNotes">
+
+        </ul>
     </div>
-    <!-- END accordion-block -->
 
-   
-    <!-- accordion -->
     <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          var bodyRect = document.body.getBoundingClientRect(),
-            pannelRect = this.getBoundingClientRect(),
-            offset = pannelRect.top - bodyRect.top;
-
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-            setTimeout(() => {
-              window.scrollTo({
-                top: offset,
-                behavior: "smooth",
-              });
-            }, 200);
-          }
-        });
-      }
- 
 
     var ads = [
       {
@@ -150,24 +112,21 @@
 
 
     var footerNotes = [
-      "Hướng dẫn mua hàng trên Piktina:",
-      "- Bấm vào sản phẩm bạn thik",
-      "- Thêm vào giỏ hàng liền tay",
-      "- Chọn thanh toán",
-      "- Sau đó chọn MUA HÀNG",
-      "- Chờ GHTK giao hàng cho bạn trong 1-2 ngày"
+      "Bấm vào sản phẩm bạn thik",
+      "Thêm vào giỏ hàng liền tay",
+      "Chọn thanh toán",
+      "Sau đó chọn MUA HÀNG",
+      "Chờ GHTK giao hàng cho bạn trong 1-2 ngày"
     ]
 
     var footerNotesHtml = ''
     for (let i = 0; i < footerNotes.length; i += 1){
-      footerNotesHtml += `<p>${footerNotes[i]}</p>`
+      footerNotesHtml += `<li>${footerNotes[i]}</li>`
     }
 
     document.getElementById('footerNotes').innerHTML = footerNotesHtml
 
     </script>
-    <!-- end accordion -->
-
     <!-- Match height -->
     <!-- data-match-height to active plugin, the value is the class name of elements you want to match height -->
     <script>
