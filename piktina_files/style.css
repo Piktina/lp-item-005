@@ -1,7 +1,5 @@
 body,
-p,
-dl,
-dd {
+p {
   margin: 0;
 }
 
@@ -29,14 +27,14 @@ button {
   padding-top: 24px;
   padding-bottom: 48px;
   text-align: center;
-  font-family: "Mulish";
+  font-family: "Mulish", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 22px;
 }
 
 .section-header {
-  font-family: "Alfa Slab One";
+  font-family: "Alfa Slab One", sans-serif;
   font-size: 26px;
   font-weight: 400;
   line-height: 31px;
@@ -57,7 +55,7 @@ button {
 
 
 .section-bottom-btn a {
-  font-family: Alfa Slab One;
+  font-family: "Alfa Slab One", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -79,7 +77,7 @@ button {
 
 
 .last-call-btn a {
-  font-family: "Alfa Slab One";
+  font-family: "Alfa Slab One", sans-serif;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
@@ -93,7 +91,7 @@ button {
 .footer {
   padding: 32px 24px 64px;
   gap: 12px;
-  font-family: "Mulish";
+  font-family: "Mulish", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
@@ -106,72 +104,70 @@ button {
   align-items: flex-end;
   letter-spacing: -0.1px;
 
-  font-family: "Mulish";
+  font-family: "Mulish", sans-serif;
   font-style: normal;
   font-size: 20px;
   line-height: 26px;
   color: #f7fafc;
 }
 
+
 /* START merchant list style */
 .merchant__list {
-  padding: 0 8px;
-  background-color: #fbfbfb;
+  padding: 0 18px;
+  /* background-color: black; */
 }
+
 .merchant__box {
   display: flex;
   min-height: 130px;
-  padding: 9px 12px;
+  padding: 6px 6px;
   box-sizing: border-box;
 }
-.merchant__image {
-  width: 35%;
-  min-width: 112px;
-}
+
 .merchant__image img {
   display: block;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 6px;
   box-shadow: 1px 10px 9px 0px rgba(2, 15, 15, 0.1);
 }
-.merchant__content {
-  flex: 1 1 auto;
-  padding-left: 15px;
-}
 
-.merchant__content * {
-  margin-bottom: 6px;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
-  color: rgb(51, 51, 51);
-}
-.merchant__content .merchant__title {
-  margin: 10px 0 15px 0;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 12px;
-}
-.merchant__content .merchant__highlight {
-  font-weight: 700;
-}
-
-.merchant__content--style-2 {
-  padding: 14px 11px 11px;
-}
-
-.merchant__content--style-2 * {
-  margin-bottom: 5px;
-  font-size: 11px;
-  line-height: 18px;
-}
-
-.merchant__content--style-2 .merchant__title,
-.merchant__content--style-2 .merchant__highlight {
+.merchant__content--style-2 .merchant__title {
   margin: 0;
-  font-weight: 700;
+  font-family: Mulish;
+  color: #222729;
   font-size: 13px;
+  font-weight: 400;
   line-height: 18px;
+  text-align: left;
+  padding-bottom: 2px;
+
+  /* max 2 lines for title */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+
+
+.merchant__content--style-2 .merchant__highlight {
+  font-family: 'Mulish', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  color: #161A1C;
+
+
+  /* max 2 lines for title */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2; 
+  -webkit-box-orient: vertical;
 }
 
 .merchant__list--style-2 {
@@ -184,31 +180,24 @@ button {
   flex-direction: column;
 }
 
-.merchant__list--style-2 .merchant__image {
-  width: 100%;
-}
 
 .merchant__list--style-2 .merchant__image img {
-  border-radius: 4px 4px 0 0;
+  /* border-radius: 4px 4px 0 0; */
   box-shadow: none;
 }
 
 .merchant__list--style-2 .merchant__content {
-  background-color: white;
-  border-radius: 0 0 4px 4px;
+  padding: 8px 0px;
+  /* background-color: gray; */
+  /* border-radius: 0 0 4px 4px; */
   overflow: hidden;
   flex: 1 1 auto;
-  box-shadow: 1px 10px 22px 0px rgba(156, 156, 156, 0.15);
+  /* box-shadow: 1px 10px 22px 0px rgba(156, 156, 156, 0.15); */
 }
 /* END merchant list style */
 
-.coupon-block {
-  display: flex;
-  align-items: center;
-}
-
 @media screen and (min-width: 375px) {
-  .accordion {
+  /* .accordion {
     padding: 17px 43px 16px 20px;
     font-size: 15px;
   }
@@ -218,11 +207,11 @@ button {
     right: 15px;
     width: 23px;
     height: 23px;
-  }
+  } */
 }
 
 @media screen and (min-width: 768px) {
-  .accordion {
+  /* .accordion {
     padding: 33px 95px 33px 50px;
     font-size: 30px;
   }
@@ -236,11 +225,11 @@ button {
     right: 40px;
     width: 45px;
     height: 45px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1024px) {
-  .accordion-block {
+  /* .accordion-block {
     padding: 8px 60px;
   }
 
@@ -255,5 +244,5 @@ button {
     right: 52px;
     width: 60px;
     height: 60px;
-  }
+  } */
 }
