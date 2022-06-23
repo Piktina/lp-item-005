@@ -10,9 +10,8 @@
     content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1" />
   <link rel="stylesheet" href="./piktina_files/style.css" />
   <link rel="icon" type="image/x-icon" href="./piktina_files/favicon.ico" />
-  <!-- <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'> -->
   <link href="https://fonts.cdnfonts.com/css/mulish" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/alfa-slab-one" rel="stylesheet">                
+  <link href="https://fonts.cdnfonts.com/css/alfa-slab-one" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +19,7 @@
   <a href="javascript:;">
     <img src="./piktina_files/cover_moidien.png2" alt="" />
   </a>
--->
+  -->
   <div class="description">
    Piktina gợi ý cho bạn những mẫu quần jeans xịn - mịn - lạ mắt, để giúp bạn có thêm những gợi ý phối đồ thật phong cách.
   </div>
@@ -31,22 +30,21 @@
   <section class="merchant__list merchant__list--style-2" data-match-height="merchant__box" id="collection1">
   </section>
   
-<!--
-  <div style="text-align: center;">
+
+  <!-- <div style="text-align: center;">
     <button type="button" class="section-bottom-btn">
       <a href="javascript:;">
         Xem bộ sưu tập
       </a>
     </button>
-  </div>
+  </div> -->
 
   <div style="padding-top:40px"></div>
 
-  <div class="section-header">
+  <!-- <div class="section-header">
     Title Section 1<br />
     Tối đa 2 dòng
   </div>
-
   <section class="merchant__list merchant__list--style-2" data-match-height="merchant__box" id="collection2">
   </section>
   <div style="text-align: center;">
@@ -55,9 +53,8 @@
         Xem bộ sưu tập
       </a>
     </button>
-  </div>
---> 
-  <div style="padding-top:40px"></div>
+  </div> -->
+
   <div style="text-align: center;">
     <button type="button" class="last-call-btn">
       <a href="https://piktina.com/home">
@@ -176,7 +173,6 @@
       },
     ]
 
-   <!--
 
     var collection2 = [
       {
@@ -189,7 +185,7 @@
 
     ]
 
-  -->
+
 
     function getListImagesHTML(ads) {
       let mechantListHtml = ''
@@ -217,8 +213,16 @@
     }
 
 
-    document.getElementById("collection1").innerHTML = getListImagesHTML(collection1)
-    document.getElementById("collection2").innerHTML = getListImagesHTML(collection2)
+    let collection1Component =  document.getElementById("collection1")
+    let collection2Component = document.getElementById("collection2")
+
+    if (collection1Component){
+      collection1Component.innerHTML = getListImagesHTML(collection1)
+    }
+
+    if (collection2Component){
+      collection2Component.innerHTML = getListImagesHTML(collection2)
+    }
 
 
     var footerNotes = [
