@@ -24,7 +24,7 @@ button {
 }
 
 .description {
-  padding-top: 24px;
+  padding-top: 14px;
   padding-bottom: 24px;
   text-align: center;
   font-family: "Mulish", sans-serif;
@@ -33,6 +33,15 @@ button {
   line-height: 22px;
 }
 
+.section-header {
+  font-family: "Alfa Slab One", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-bottom: 10px;
+}
 
 .section-bottom-btn {
   box-sizing: border-box;
@@ -41,7 +50,7 @@ button {
   border: 1.5px solid #161A1C;
   border-radius: 8px;
   margin-top: 32px;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 
 
@@ -55,6 +64,7 @@ button {
   color: #111111;
 }
 
+
 .last-call-btn {
   box-sizing: border-box;
   width: 295px;
@@ -64,6 +74,7 @@ button {
   margin-bottom: 80px;
   background-color: #161A1C;
 }
+
 
 .last-call-btn a {
   font-family: "Alfa Slab One", sans-serif;
@@ -100,10 +111,11 @@ button {
   color: #f7fafc;
 }
 
+
 /* START merchant list style */
 .merchant__list {
   padding: 0 18px;
-  background-color: black; 
+ background-color: black; 
 }
 
 .merchant__box {
@@ -125,7 +137,7 @@ button {
 .merchant__content--style-2 .merchant__title {
   margin: 0;
   font-family: Mulish;
-  color: #222729;
+  color: #white;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -236,6 +248,7 @@ button {
     height: 60px;
   } */
 }
+
 /* VIDEO list style 
 .content-detail-wrap .video-wrap .video-in .wrap-iframe[data-v-7449e914] {
     position: relative;
@@ -251,11 +264,12 @@ button {
   box-shadow: 1px 10px 9px 0px rgba(2, 15, 15, 0.1);
 }
 */
-.wrap-iframe[data-v-7449e914] {
+.wrap-iframe[video] {
     position: relative;
-    padding-bottom: 50%;
-    height: 0;
+    padding-bottom: 0%;
     overflow: hidden;
-    height: 300px;
+    height: 315px;
+    border-radius: 6px;
+    box-shadow: 1px 10px 9px 0px rgba(2, 15, 15, 0.1);
 }
 
