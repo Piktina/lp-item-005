@@ -264,7 +264,7 @@ button {
   box-shadow: 1px 10px 9px 0px rgba(2, 15, 15, 0.1);
 }
  */
-.wrap-iframe[video] {
+.wrap-iframe{
     position: relative;
     padding: 5%;
     overflow: hidden;
