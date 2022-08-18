@@ -40,7 +40,7 @@ button {
   line-height: 31px;
   letter-spacing: 0px;
   text-align: center;
-  padding-bottom: 10px;
+  padding: 20px;
 }
 
 .section-bottom-btn {
@@ -137,7 +137,7 @@ button {
 .merchant__content--style-2 .merchant__title {
   margin: 0;
   font-family: Mulish;
-  color: #white;
+  color: white;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -160,7 +160,7 @@ button {
   font-weight: 700;
   line-height: 18px;
   text-align: left;
-  color: #161A1C;
+  color: white;
 
 
   /* max 2 lines for title */
@@ -266,10 +266,11 @@ button {
 */
 .wrap-iframe[video] {
     position: relative;
-    padding-bottom: 0%;
+    padding: 5%;
     overflow: hidden;
     height: 315px;
-    border-radius: 6px;
-    box-shadow: 1px 10px 9px 0px rgba(2, 15, 15, 0.1);
+    border: 3px;
+    border-radius: 20px;
+    box-shadow: 1px 10px 9px 0px #afb7b25e;
 }
 
