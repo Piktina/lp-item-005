@@ -248,3 +248,10 @@ button {
     height: 60px;
   } */
 }
+/* VIDEO list style */
+.content-detail-wrap .video-wrap .video-in .wrap-iframe[data-v-7449e914] {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
