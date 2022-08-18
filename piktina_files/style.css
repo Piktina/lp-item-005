@@ -114,8 +114,8 @@ button {
 
 /* START merchant list style */
 .merchant__list {
-  padding: 0 18px;
- background-color: black; 
+  padding: 30px 18px;
+ background-color: #5869FA; 
 }
 
 .merchant__box {
