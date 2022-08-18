@@ -115,7 +115,7 @@ button {
 /* START merchant list style */
 .merchant__list {
   padding: 30px 18px;
- background-color: #5869FA; 
+ background-color: #111111; 
 }
 
 .merchant__box {
@@ -255,7 +255,7 @@ button {
     padding-bottom: 10%;
     height: 0;
     overflow: hidden;
-}
+
 .wrap-iframe  {
   object-fit: cover;
   display: block;
@@ -263,7 +263,6 @@ button {
   border-radius: 6px;
   box-shadow: 1px 10px 9px 0px rgba(2, 15, 15, 0.1);
 }
-
 .wrap-iframe[video] {
     position: relative;
     padding: 5%;
