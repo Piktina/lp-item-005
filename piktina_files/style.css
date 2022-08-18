@@ -33,7 +33,6 @@ button {
   line-height: 22px;
 }
 
-z
 
 .section-bottom-btn {
   box-sizing: border-box;
@@ -56,7 +55,6 @@ z
   color: #111111;
 }
 
-
 .last-call-btn {
   box-sizing: border-box;
   width: 295px;
@@ -66,7 +64,6 @@ z
   margin-bottom: 80px;
   background-color: #161A1C;
 }
-
 
 .last-call-btn a {
   font-family: "Alfa Slab One", sans-serif;
@@ -102,7 +99,6 @@ z
   line-height: 26px;
   color: #f7fafc;
 }
-z
 
 /* START merchant list style */
 .merchant__list {
@@ -247,12 +243,19 @@ z
     height: 0;
     overflow: hidden;
 }
-*/
 .wrap-iframe  {
   object-fit: cover;
   display: block;
   width: 100%;
   border-radius: 6px;
-  height: 300px;
   box-shadow: 1px 10px 9px 0px rgba(2, 15, 15, 0.1);
 }
+*/
+.wrap-iframe[data-v-7449e914] {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    height: 300px;
+}
+
