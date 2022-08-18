@@ -114,7 +114,7 @@ button {
 
 /* START merchant list style */
 .merchant__list {
-  padding: 30px 18px;
+  padding: 20px 2%;
  background-color: #111111; 
 }
 
@@ -266,7 +266,7 @@ button {
 */
 .wrap-iframe{
     position: relative;
-    padding: 5%;
+    padding: 0%;
     overflow: hidden;
     height: 315px;
     border: 3px;
