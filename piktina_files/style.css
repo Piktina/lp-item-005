@@ -249,7 +249,7 @@ button {
   } */
 }
 
-/* VIDEO list style */
+/* VIDEO list style 
 .content-detail-wrap .video-wrap .video-in .wrap-iframe[data-v-7449e914] {
     position: relative;
     padding-bottom: 10%;
@@ -263,7 +263,7 @@ button {
   border-radius: 6px;
   box-shadow: 1px 10px 9px 0px rgba(2, 15, 15, 0.1);
 }
- */
+*/
 .wrap-iframe{
     position: relative;
     padding: 5%;
