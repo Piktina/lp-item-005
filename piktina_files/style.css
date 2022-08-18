@@ -25,7 +25,7 @@ button {
 
 .description {
   padding-top: 24px;
-  padding-bottom: 48px;
+  padding-bottom: 24px;
   text-align: center;
   font-family: "Mulish", sans-serif;
   font-size: 15px;
@@ -107,7 +107,7 @@ z
 /* START merchant list style */
 .merchant__list {
   padding: 0 18px;
-  /* background-color: black; */
+  background-color: black; 
 }
 
 .merchant__box {
@@ -240,17 +240,19 @@ z
     height: 60px;
   } */
 }
-/* VIDEO list style */
+/* VIDEO list style 
 .content-detail-wrap .video-wrap .video-in .wrap-iframe[data-v-7449e914] {
     position: relative;
     padding-bottom: 10%;
     height: 0;
     overflow: hidden;
 }
-.video-wrap  {
+*/
+.wrap-iframe  {
   object-fit: cover;
   display: block;
   width: 100%;
   border-radius: 6px;
+  height: 300px;
   box-shadow: 1px 10px 9px 0px rgba(2, 15, 15, 0.1);
 }
